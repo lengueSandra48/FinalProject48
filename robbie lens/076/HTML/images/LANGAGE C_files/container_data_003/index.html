@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="ad.size" content="width=336,height=280">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index_data/style.css" rel="stylesheet" type="text/css">
+    <script src="index_data/anime.min.js"></script>
+    <title>Taste of Summer 336x280</title>
+    <script type="text/javascript">
+      var clickTag = "https://www.just-eat.co.uk/";
+    </script>
+  <script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head>
+  <body>
+    <script></script>
+    <a href="javascript:window.open(window.clickTag)" class="container">
+      <img class="absolute logo" alt="logo" src="index_data/jetVerticalLogo__320e4a5b-af9a-4c06-ba48-0e1405f62454.png" style="transform: scale(1); opacity: 1;">
+      <div class="content-wrapper">
+        <h1 class="headline">
+          
+          
+        <div id="copy-0" class="copy" style="opacity: 0; visibility: hidden;"><div id="headline-0" class="headline-text"><span class="letter"><span style="transform: translateY(0%);">S</span></span><span class="letter"><span style="transform: translateY(0%);">a</span></span><span class="letter"><span style="transform: translateY(0%);">v</span></span><span class="letter"><span style="transform: translateY(0%);">o</span></span><span class="letter"><span style="transform: translateY(0%);">u</span></span><span class="letter"><span style="transform: translateY(0%);">r</span></span><span class="letter"><span style="transform: translateY(0%);">e</span></span><span class="letter"><span style="transform: translateY(0%);">z</span></span></div><div id="headline-1" class="headline-text"><span class="letter"><span style="transform: translateY(0%);">l</span></span><span class="letter"><span style="transform: translateY(0%);">’</span></span><span class="letter"><span style="transform: translateY(0%);">é</span></span><span class="letter"><span style="transform: translateY(0%);">t</span></span><span class="letter"><span style="transform: translateY(0%);">é</span></span></div></div><div id="copy-1" class="copy"><div id="headline-0" class="headline-text"><span class="letter"><span style="transform: translateY(0%);">L</span></span><span class="letter"><span style="transform: translateY(0%);">e</span></span><span class="letter"><span style="transform: translateY(0%);">s</span></span></div><div id="headline-1" class="headline-text"><span class="letter"><span style="transform: translateY(0%);">p</span></span><span class="letter"><span style="transform: translateY(0%);">l</span></span><span class="letter"><span style="transform: translateY(0%);">a</span></span><span class="letter"><span style="transform: translateY(0%);">t</span></span><span class="letter"><span style="transform: translateY(0%);">s</span></span></div><div id="headline-2" class="headline-text"><span class="letter"><span style="transform: translateY(0%);">q</span></span><span class="letter"><span style="transform: translateY(0%);">u</span></span><span class="letter"><span style="transform: translateY(0%);">e</span></span></div><div id="headline-3" class="headline-text"><span class="letter"><span style="transform: translateY(0%);">t</span></span><span class="letter"><span style="transform: translateY(0%);">u</span></span></div><div id="headline-4" class="headline-text"><span class="letter"><span style="transform: translateY(0%);">a</span></span><span class="letter"><span style="transform: translateY(0%);">i</span></span><span class="letter"><span style="transform: translateY(0%);">m</span></span><span class="letter"><span style="transform: translateY(0%);">e</span></span><span class="letter"><span style="transform: translateY(0%);">s</span></span></div></div></h1>
+        <button type="button" class="button" style="transform: translateY(0px); opacity: 1;">Voir le menu</button>
+      </div>
+      <div class="absolute food-wrapper" style="transform: translateY(0%);">
+        <img class="absolute food" src="index_data/htmlImage-1__263264b5-4e09-4d24-a6d1-c8435437c5a9.jpg" alt="food" style="transform: translateY(-57px);">
+      </div>
+      <div class="absolute tc-wrapper hidden" style="transform: translateY(0%);">
+        <p></p>
+      </div>
+    </a>
+    <script>
+      const createCopyLineElement = (index) => {
+        const div = document.createElement("div");
+        div.id = `copy-${index}`;
+        div.classList.add("copy");
+        return div;
+      };
+
+      const createHeadlineElement = (index, text) => {
+        const div = document.createElement("div");
+        div.id = `headline-${index}`;
+        div.classList.add("headline-text");
+        div.innerHTML = text.replace(
+          /\S/g,
+          "<span class='letter'><span>$&</span></span>"
+        );
+        return div;
+      };
+
+      const splitText = () => {
+        let headline = document.querySelectorAll(".headline")[0];
+        let copyLines = document.querySelectorAll(".copy-line");
+        for (let [index, item] of copyLines.entries()) {
+          const copy = item.textContent;
+          const divWrapper = createCopyLineElement(index);
+          for (let [index, text] of copy.split(" ").entries()) {
+            const div = createHeadlineElement(index, text);
+            divWrapper.appendChild(div);
+          }
+          headline.appendChild(divWrapper);
+        }
+        copyLines.forEach((el) => el.remove());
+      };
+
+      const animate = () => {
+        let timeline = anime.timeline({
+          loop: false,
+        });
+
+        timeline.add(
+          {
+            targets: ".logo",
+            easing: "linear",
+            scale: [0, 1],
+            opacity: [0, 1],
+            duration: 300,
+            begin: function () {
+              document.querySelector(".logo").style.display = "block";
+            },
+          },
+          0
+        );
+
+        timeline.add(
+          {
+            targets: `#copy-0 .headline-text .letter span`,
+            translateY: ["100%", "0%"],
+            easing: "easeInOutBack",
+            duration: 500,
+            delay: (el, i) => 30 * i,
+            begin: function () {
+              document.querySelector(".headline").style.visibility = "visible";
+              document.querySelector("#copy-0").style.visibility = "visible";
+            },
+          },
+          0
+        );
+
+        timeline.add(
+          {
+            targets: ".button",
+            translateY: ["50px", "0"],
+            opacity: [0, 1],
+            easing: "easeOutCubic",
+            duration: 500,
+            begin: function () {
+              document.querySelector(".button").style.display = "block";
+            },
+          },
+          0
+        );
+
+        timeline.add(
+          {
+            targets: ".food-wrapper",
+            translateY: ["100%", "0"],
+            easing: "easeOutCubic",
+            duration: 800,
+            begin: function () {
+              document.querySelector(".food-wrapper").style.display = "block";
+            },
+          },
+          0
+        );
+
+        timeline.add(
+          {
+            targets: ".food",
+            translateY: ["0", "-57px"],
+            easing: "easeOutCubic",
+            duration: 1000,
+            begin: function () {
+              document.querySelector(".food-wrapper").style.display = "block";
+            },
+          },
+          0
+        );
+
+        timeline.add(
+          {
+            targets: ".tc-wrapper",
+            translateY: ["100%", "0"],
+            easing: "easeOutCubic",
+            delay: 350,
+            duration: 500,
+            begin: function () {
+              document.querySelector(".tc-wrapper").style.display = "block";
+            },
+          },
+          0
+        );
+
+        timeline.add(
+          {
+            targets: "#copy-0",
+            easing: "linear",
+            opacity: [1, 0],
+            duration: 200,
+            delay: 3000,
+            complete: function (anim) {
+              document.querySelector("#copy-0").style.visibility = "hidden";
+            },
+          },
+          0
+        );
+
+        timeline.add(
+          {
+            targets: `#copy-1 .headline-text .letter span`,
+            translateY: ["100%", "0%"],
+            easing: "easeInOutBack",
+            duration: 500,
+            delay: 3000,
+            delay: (el, i) => 30 * i,
+            begin: function () {
+              document.querySelector("#copy-1").style.visibility = "visible";
+            },
+          },
+          3500
+        );
+      };
+
+      const adjustWidths = () => {
+        const copy1 = `"Savourez l’été"`.slice(1, -1);
+        const copy2 = `"Les plats que tu aimes"`.slice(1, -1);
+
+        const maxLength = 17;
+        let scaleFactor = 0.95;
+
+        const words = [...copy1.split(" "), ...copy2.split(" ")];
+
+        const longestWord = words.reduce(
+          (acc, curr) => (curr.length > acc.length ? curr : acc),
+          ""
+        );
+
+        const headline = document.querySelector(".headline");
+
+        if (longestWord.length > maxLength) {
+          const fontSize = window
+            .getComputedStyle(headline)
+            .getPropertyValue("font-size");
+          const root = document.querySelector(":root");
+          const wordSpacing = window
+            .getComputedStyle(root)
+            .getPropertyValue("--word-spacing");
+
+          headline.style.fontSize = `calc(${fontSize} * ${scaleFactor})`;
+          root.style.setProperty(
+            "--word-spacing",
+            `calc(${wordSpacing} * ${scaleFactor})`
+          );
+        }
+      };
+
+      const adjustLogo = () => {
+        const market = `"CH"`.slice(
+          1,
+          -1
+        );
+        const logo = document.querySelector(".logo");
+
+        if (market === "NL") {
+          logo.style.width = "80px";
+        }
+      };
+
+      const start = () => {
+        adjustLogo();
+        adjustWidths();
+        splitText();
+        animate();
+      };
+
+      window.addEventListener("load", start);
+    </script>
+  
+
+</body></html>

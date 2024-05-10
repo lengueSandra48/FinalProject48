@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "JET Sans";
+  src: url("./JETSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JET Sans";
+  src: url("./JETSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JET Sans";
+  src: url("./JETSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --c-orange: #ff8001;
+  --c-white: #fff;
+  --c-blue: #125fca;
+  --c-black: #000000;
+  --word-spacing: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--c-white);
+  font-family: "JET Sans";
+}
+
+.absolute {
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-white);
+}
+
+button {
+  margin: 0;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  position: relative;
+  width: 970px;
+  height: 250px;
+  background: var(--c-orange);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-left: 26px;
+}
+
+.logo {
+  bottom: 30px;
+  left: 348px;
+  width: 104px;
+  object-fit: contain;
+  display: none;
+}
+
+.headline {
+  width: 390px;
+  top: 30px;
+  left: 26px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 105%;
+  text-align: left;
+  color: #ffffff;
+  display: none;
+}
+
+.headline .letter {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.headline .letter span {
+  display: block;
+  transform: translateY(100%);
+}
+
+.headline-text {
+  display: inline-block;
+  margin-right: var(--word-spacing);
+}
+
+.copy {
+  display: none;
+}
+
+.button {
+  min-width: 124px;
+  padding: 0 12px;
+  whitepsace: nowrap;
+  height: 31px;
+  bottom: 30px;
+  background: var(--c-blue);
+  border-radius: 22px;
+  color: var(--c-white);
+  font-weight: 700;
+  font-size: 15px;
+  display: none;
+}
+
+.food-wrapper {
+  top: 0;
+  right: 0;
+  right: 0;
+  width: 529px;
+  height: 250px;
+  display: block;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%);
+  transition: 0.5s clip-path;
+}
+
+.food {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 58px);
+  object-fit: cover;
+}
+
+.tc-wrapper {
+  bottom: 0;
+  left: 0;
+  background: var(--c-white);
+  color: var(--c-black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  text-align: center;
+  padding: 5px;
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
