@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto+Mono:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    background: #7f99df;
+    color: #fff;
+}
+h1{
+    margin-bottom: 15px;
+}
+section{
+    height: calc(100vh- 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    text-align: center;
+}
+.error_message{
+    color: rgb(226, 30, 30);
+    padding: 15px;
+}
+input,button{
+    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    cursor: pointer;
+}
+input{
+    background-color: #dfdef4;
+}
+button{
+    background-color: #255fe5;
+    color: #fff;
+    text-transform: capitalize;
+}
+.result{
+    margin-top: 10px;
+    color: #255fe5;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    border: 1px solid #255fe5;
+    display: none;
+}

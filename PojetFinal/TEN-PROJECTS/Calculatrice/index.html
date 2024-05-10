@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="calculatrice">
+        <div class="logo">076_MLS</div>
+        <div class="screen">
+            <input type="text" placeholder="0" id="screen">
+        </div>
+
+        <div class="keys">
+            <button onclick="screen.value=''" id="key-Clear">AC</button>
+            <button onclick="back()" id="key-back">CE</button>
+            <button class="key">(</button>
+            <button class="key">)</button>
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button class="key">-</button>
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button class="key">+</button>
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button class="key">÷</button>
+            <button class="key">0</button>
+            <button class="key">.</button>
+            <button class="key">x</button>
+            <button onclick="screen.value = eval(screen.value);" id="key-egal">=</button>
+
+        </div>
+    </div>
+</body>
+</html>

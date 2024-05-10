@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="72mm"
+   height="60mm"
+   viewBox="0 0 72 60"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="closedEyes.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.45254834"
+     inkscape:cx="-233.12427"
+     inkscape:cy="573.41941"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7025"
+       transform="translate(-187.24417,-107.13915)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke:#505050;stroke-width:3.59;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path2885"
+         cx="63.020069"
+         cy="140.53404"
+         r="17.393965"
+         inkscape:export-filename="/home/zepoh/Desktop/satcha/openEyes20.png"
+         inkscape:export-xdpi="7.7455559"
+         inkscape:export-ydpi="7.7455559" />
+      <path
+         style="fill:none;stroke:#505050;stroke-width:4.065;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 32.310021,140.72038 c -0.452267,-19.04663 15.002429,-27.82493 30.937459,-28.14666 15.935025,-0.32173 30.249225,9.44064 29.916605,28.91972"
+         id="path3134"
+         sodipodi:nodetypes="czc"
+         inkscape:export-filename="/home/zepoh/Desktop/satcha/openEyes20.png"
+         inkscape:export-xdpi="7.7455559"
+         inkscape:export-ydpi="7.7455559" />
+    </g>
+    <g
+       id="g7030"
+       transform="matrix(0.72495098,0,0,0.72495098,171.2271,-64.45141)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke:#505050;stroke-width:3.59;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle4234"
+         cx="-188.63528"
+         cy="135.79596"
+         r="17.393965"
+         inkscape:export-filename="/home/zepoh/Desktop/satcha/closedEyes20.png"
+         inkscape:export-xdpi="7.0901384"
+         inkscape:export-ydpi="7.0901384" />
+      <path
+         style="fill:none;stroke:#505050;stroke-width:4.065;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -219.34532,135.9823 c -0.45227,-19.04663 15.00243,-27.82493 30.93746,-28.14666 15.93502,-0.32173 30.24922,9.44064 29.9166,28.91972"
+         id="path4236"
+         sodipodi:nodetypes="czc"
+         inkscape:export-filename="/home/zepoh/Desktop/satcha/closedEyes20.png"
+         inkscape:export-xdpi="7.0901384"
+         inkscape:export-ydpi="7.0901384" />
+      <path
+         style="fill:none;stroke:#505050;stroke-width:4.265;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -224.67719,91.005546 66.35698,78.131134"
+         id="path4271"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/zepoh/Desktop/satcha/closedEyes20.png"
+         inkscape:export-xdpi="7.0901384"
+         inkscape:export-ydpi="7.0901384" />
+    </g>
+  </g>
+</svg>

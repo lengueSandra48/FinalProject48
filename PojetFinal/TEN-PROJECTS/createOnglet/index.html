@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crée Des Onglets</title>
+</head>
+<body>
+    <div class="tab">
+        <button class="tabLinks" onclick="openOnglet(event,'Home')">Home</button>
+        <button class="tabLinks" onclick="openOnglet(event,'Contact')">Contact</button>
+        <button class="tabLinks" onclick="openOnglet(event,'Reservation')">Reservation</button>
+        <button class="tabLinks" onclick="openOnglet(event,'Boutique')">Boutique</button>
+    </div>
+    <div class="tabcontent" id="Home">
+        <h3>Home</h3>
+        <p>Bienvenue sur la page Home</p>
+        <div class="picture">
+            <img src="img1.jpg" alt="fruits">
+        </div>
+    </div>
+    <div class="tabcontent" id="Contact">
+        <h3>Contact</h3>
+        <p>Bienvenue sur la page Contact</p>
+        <div class="picture">
+            <img src="img2.jpg" alt="fruits">
+        </div>
+    </div>
+    <div class="tabcontent" id="Reservation">
+        <h3>Reservation</h3>
+        <p>Bienvenue sur la page Reservation</p>
+        <div class="picture">
+            <img src="img3.jpg" alt="fruits">
+        </div>
+    </div>
+    <div class="tabcontent" id="Boutique">
+        <h3>Boutique</h3>
+        <p>Bienvenu sur la page Boutique</p>
+        <div class="picture">
+            <img src="img4.jpg" alt="fruits">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;;
+}
+::selection{
+    background-color: #fff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #5372f0;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+}
+h2{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.passwordBox{
+    padding: 0 10px;
+}
+input{
+    width: 100%;
+    letter-spacing: 3px;
+    padding: 20px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    outline: 0;
+    border: 1px solid #ccc;
+}
+.buttons{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    text-transform: capitalize;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:first-child{
+    color: #fff;
+    background-color: #5372f0;
+    width: 69%;
+}
+button:last-child{
+    color: #6c757d;
+    background-color: transparent;
+    width: 28%;
+    border: 1px solid #6c757d;
+}

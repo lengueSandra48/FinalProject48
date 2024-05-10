@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+body{
+    background-color: #675afe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*style le container*/
+.Container{
+    background-color: #fff;
+    width: 350px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    background-color: transparent;
+   
+}
+
+form label{
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+
+form label img{
+    position: relative;
+    top: 38px;
+    right: 15px;
+    height: 15px;
+}
+
+.closedEyes{
+    height: 25px;
+    top: 34px;
+}
+
+/*Personnaliser le button d'envoi*/
+input[type="submit"]{
+    background-color: #675afe;
+    color: #fff;
+    border: #675afe 1px solid;
+}
+
+/*Personnaliser la boite de message*/
+#message{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 350px;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    animation: anime 1s linear;
+}
+
+/*Animation message*/
+@keyframes anime {
+    from{
+        transform: translateY(100px);
+    }
+}
+h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+#message p{
+    margin-left: 7px;
+    padding: 7px 0;
+    font-size: 15px;
+}
+
+
+/*Lorsque les exigences sont eronnées*/
+.invalid{
+    color: red;
+}
+.invalid::before{
+    position: relative;
+    left: -7px;
+    content: "✕";
+}
+/*Lorsque les exigences sont respectées*/
+.valid{
+    color: green;
+}
+.valid::before{
+    position: relative;
+    left: -7px;
+    content: "✔";
+}
